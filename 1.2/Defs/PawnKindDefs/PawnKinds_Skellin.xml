@@ -2,14 +2,113 @@
 
 <Defs>
 	
-	<PawnKindDef>
+	<PawnKindDef> <!-- ParentName="MercenaryBase">-->
 		
 		<defName>SkellinCivvie</defName>
 		<label>Skellin Civilian</label>
 		<race>SkellinRace</race>
 		
+		<defaultFactionType>OutlanderCivil</defaultFactionType>
+		
+		<invNutrition>2.55</invNutrition>
+		<itemQuality>Normal</itemQuality>
+		
+		<maxGenerationAge>55</maxGenerationAge>
+		
+		<combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
+		
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+		</apparelTags>
+		
+		<apparelMoney>400~700</apparelMoney>
+		<apparelAllowHeadgearChance>0.6</apparelAllowHeadgearChance>
+		
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		
+		<weaponMoney>
+			<min>136</min> <!--Cheapest vanilla gun-->
+			<max>300</max>
+		</weaponMoney>
+		
+		<techHediffsChance>0.05</techHediffsChance>
+		<techHediffsMoney>50~400</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+		
+		<inventoryOptions>
+			<skipChance>0.95</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>MedicineIndustrial</thingDef>
+					<countRange>1~5</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		
 		<combatPower>35</combatPower>
 		
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="MercenaryBase">
+		<defName>SkellinMerc</defName>
+		<label>Skellin Mercanary</label>
+		<race>SkellinRace</race>
+		
+		<defaultFactionType>OutlanderCivil</defaultFactionType>
+		
+		<invNutrition>2.55</invNutrition>
+		<itemQuality>Normal</itemQuality>
+		
+		<maxGenerationAge>50</maxGenerationAge>
+		
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryBasic</li>
+			<li>BeltDefensePop</li>
+		</apparelTags>
+		
+		<apparelMoney>400~700</apparelMoney>
+		<apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+		
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		
+		<weaponMoney>250~500</weaponMoney>
+		
+		<techHediffsChance>0.05</techHediffsChance>
+		<techHediffsMoney>100~400</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		
+		<inventoryOptions>
+			<skipChance>0.95</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>MedicineIndustrial</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<combatPower>70</combatPower>
+		
+		<biocodeWeaponChance>0.1</biocodeWeaponChance>
 	</PawnKindDef>
 	
 </Defs>
