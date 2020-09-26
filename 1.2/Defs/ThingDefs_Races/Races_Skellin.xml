@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	
+	<AlienRace.ThingDef_AlienRace ParentName="HumanRace">
+		
+		<defName>SkellinRace</defName>
+		<label>Skellin</label>
+		<description>This is a description.</description>
+		
+		<alienRace>
+			
+			<generalSettings>
+				
+				<forcedRaceTraitEntries>
+					<li>
+						<defName>Nerves</defName>
+						<degree>1</degree>
+					</li>
+					<li>
+						<defName>Nerves</defName>
+						<degree>2</degree>
+						<chance>75</chance>
+					</li>
+				</forcedRaceTraitEntries>
+				
+				<disallowedTraits>
+					<li>
+						<defName>Beauty</defName>
+						<degree>1</degree>
+					</li>
+					<li>
+						<defName>Beauty</defName>
+						<degree>2</degree>
+					</li>
+				</disallowedTraits>
+				
+				<allowHumanBios>true</allowHumanBios>
+				<humanRecipeImport>true</humanRecipeImport>
+				
+				<alienPartGenerator>
+					
+					<!--<useGenderedHeads>false</useGenderedHeads>-->
+					
+					<aliencrowntypes>
+						<li>dude</li>
+					</aliencrowntypes>
+					
+					<alienbodytypes>
+						<li>Male</li>
+					</alienbodytypes>
+					
+					
+					
+				</alienPartGenerator>
+				
+			</generalSettings>
+			
+			<graphicPaths>
+				
+				<li>
+					<body>Skellin/Body/</body>
+					<head>Skellin/Head/</head>
+				</li>
+				
+			</graphicPaths>
+			
+			<hairSettings>
+				<hasHair>false</hasHair>
+			</hairSettings>
+			
+		</alienRace>
+		
+	</AlienRace.ThingDef_AlienRace>
+	
+</Defs>

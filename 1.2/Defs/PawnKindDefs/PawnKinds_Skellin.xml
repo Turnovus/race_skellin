@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	
+	<PawnKindDef>
+		
+		<defName>SkellinCivvie</defName>
+		<label>Skellin Civilian</label>
+		<race>SkellinRace</race>
+		
+		<combatPower>35</combatPower>
+		
+	</PawnKindDef>
+	
+</Defs>
