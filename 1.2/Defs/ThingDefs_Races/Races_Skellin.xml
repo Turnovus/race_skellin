@@ -1,37 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- 
-	Do not use this file as is it will not work this is a short cut and possibly a guide.
-	A great deal of this was changed to match the HAR Github Wiki       =      https://github.com/RimWorld-CCL-Reborn/AlienRaces/wiki
-	Not everything matches as I find that working with differnt things ordered differntly helps me.
-	-->
-	
-	<!-- Using BasePawn as a Parent which will Inherit Values inside of it when doing Inheritance you should pay attention to <li> entries as those can not be gotten rid of unless setting Inherit="False" which will prevent all Values of that Node from any parents from being passed on to us-->
-	<!-- BasePawn can be found here   =   \RimWorld\Data\Core\Defs\ThingDefs_Races\Races_Animal_Base.xml    // Most of the time there is no reason to make your own Base and if you do it is recomended to Inherit from BasePawn and only list what you need changed -->
+
 	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
 		<defName>SkellinRace</defName>
 		<label>Skellin</label>
-		<description>TODO TOFU</description>
+		<description>A race a grim-looking humanoids. While their thin skin and brittle bones means they can't take much of a beating, their dexterity allows them to get out a number of shots before they can be taken down. Because of these adaptations, they excel at taking out single targets, providing them plenty of opportunity as hitmen.</description>
 		<alienRace>
 			<graphicPaths>
-				<!-- These are Example paths starting from the Textures file then from there they follow the Path ommit what you don't want entirely  Blank Paths will give no texture, not including the node will default to Human-->
 				<li>
 					<body>Skellin/Body/</body>
 					<head>Skellin/Head/</head>
 					<skeleton>TestPawn/Dessicated/</skeleton>
 					<skull>TestPawn/Skull/</skull>
 				</li>
-				<!-- We can also have Paths per-LifeStage -->
 			</graphicPaths>
 
 			<hairSettings>
-				<!-- Hair should be colored as such only <shader>Cutout</shader> should be used and this should be assigned by default so we can omit any shader tags -->
 				<hasHair>false</hasHair>
-				<!-- <shader>Cutout</shader> -->
-				<getsGreyAt>50</getsGreyAt>
-				<hairTags>
-					<li>exampleTagHair</li>
-				</hairTags>
 			</hairSettings>
 
 			<generalSettings>
@@ -61,7 +46,7 @@
 					</li>
 				</disallowedTraits>
 				<!-- Choose between this range of more traits to spawn my Race with -->
-				<additionalTraits>1~5</additionalTraits>
+				<!--<additionalTraits>1~5</additionalTraits>-->
 				
 				<!-- Don't murder your friend by setting a maxDamage Default is unlimited -->
 				<maxDamageForSocialfight>6</maxDamageForSocialfight>
@@ -322,12 +307,12 @@
 				<!-- these values must be less than your youngest pawnkind and greater than your oldest pawn kind of this Race -->
 				<points>
 					<li>(14,0)</li>
-					<li>(16,100)</li>
+					<li>(16,50)</li>
 					<li>(50,100)</li>
-					<li>(60,30)</li>
+					<li>(60,20)</li>
 					<li>(70,18)</li>
-					<li>(80,10)</li>
-					<li>(90,3)</li>
+					<li>(80,1)</li>
+					<li>(90,0)</li>
 					<li>(100,0)</li>
 				</points>
 			</ageGenerationCurve>
@@ -348,31 +333,69 @@
 			<ComfyTemperatureMax>26</ComfyTemperatureMax>
 			<LeatherAmount>50</LeatherAmount>
 			<RoyalFavorValue>3</RoyalFavorValue>
-			<!-- these two below are inherited from BasePawn, if you wanted to overwrite their values you should just list their nodes and use your own values after which the Parent inherited values will be overwritten only in here -->
-			<!-- <Mass>60</Mass> -->
-			<!-- <Flammability>0.7</Flammability> -->
+			<Flammability>0.8</Flammability>
+			<IncomingDamageFactor>1.25</IncomingDamageFactor>
+			<AimingDelayFactor>-0.75</AimingDelayFactor>
 		</statBases>
 		
-		<tools Inherit="False">
-		<!-- I recommend setting this not to inherit but this up there is to show you that you can decide to not inherit -->
-		<!-- An example from the Human File  -->
-		<li>
-			<label>left fist</label>
-			<capacities>
-				<li>Blunt</li>
-			</capacities>
-			<power>8.2</power>
-			<cooldownTime>2</cooldownTime>
-			<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
-			<surpriseAttack>
-				<extraMeleeDamages>
-					<li>
-						<def>Stun</def>
-						<amount>14</amount>
-					</li>
-				</extraMeleeDamages>
-			</surpriseAttack>
-		</li>
+		<tools Inherit="False">0
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.07</chanceFactor>
+				<soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+				<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
 		</tools>
 		
 		<recipes>
