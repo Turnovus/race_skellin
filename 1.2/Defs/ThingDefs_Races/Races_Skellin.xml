@@ -4,7 +4,7 @@
 	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
 		<defName>SkellinRace</defName>
 		<label>Skellin</label>
-		<description>A race a grim-looking humanoids. While their thin skin and brittle bones means they can't take much of a beating, their dexterity allows them to get out a number of shots before they can be taken down. Because of these adaptations, they excel at taking out single targets, providing them plenty of opportunity as hitmen.</description>
+		<description>A race of grim-looking humanoids. While their thin skin and brittle bones prevents them from taking much of a beating, their dexterity allows them to get out a number of shots before they can be taken down. Because of these adaptations, they excel at taking out single targets, providing them plenty of opportunity as hitmen.</description>
 		<alienRace>
 			<graphicPaths>
 				<li>
@@ -334,11 +334,12 @@
 			<LeatherAmount>50</LeatherAmount>
 			<RoyalFavorValue>3</RoyalFavorValue>
 			<Flammability>0.8</Flammability>
-			<IncomingDamageFactor>1.25</IncomingDamageFactor>
-			<AimingDelayFactor>-0.75</AimingDelayFactor>
+			<IncomingDamageFactor>1.4</IncomingDamageFactor>
+			<AimingDelayFactor>0.6</AimingDelayFactor>
+			<ShootingAccuracyPawn>2</ShootingAccuracyPawn>
 		</statBases>
 		
-		<tools Inherit="False">0
+		<tools Inherit="False">
 			<li>
 				<label>left fist</label>
 				<capacities>
