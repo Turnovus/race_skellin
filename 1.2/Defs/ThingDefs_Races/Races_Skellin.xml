@@ -321,6 +321,7 @@
 				<!-- this is what controls what illnesses you get or any hediff really and can be a very powerful tool but you have to set immune to age to false -->
 				<li>OrganicStandard</li>
 				<li>Human</li>
+				<li>Skellin</li>
 			</hediffGiverSets>
 		</race>
 
@@ -328,7 +329,7 @@
 			<!-- These are the Human stats you should use your own refer to the Core files in = \RimWorld\Data\Core\Defs\Stats -->
 			<!-- Some stats are Inherited from the parent such as BasePawn commented below are the stats that are inherited -->
 			<MarketValue>1750</MarketValue>
-			<MoveSpeed>4.6</MoveSpeed>
+			<MoveSpeed>5.4</MoveSpeed>
 			<ComfyTemperatureMin>16</ComfyTemperatureMin>
 			<ComfyTemperatureMax>26</ComfyTemperatureMax>
 			<LeatherAmount>50</LeatherAmount>
