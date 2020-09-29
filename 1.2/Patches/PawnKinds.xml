@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	
+	<Operation Class="PatchOperationFindMod">
+		
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		
+		<match Class="PatchOperationAdd">
+			
+			<xpath>/Defs</xpath>
+			
+			<value>
+				
+				<PawnKindDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="JanissaryBase">
+					<defName>SkellinScout</defName>
+					<race>SkellinRace</race>
+					<weaponTags>
+						<li>IndustrialGunAdvanced</li>
+						<li>SpacerGun</li>
+						<li>SniperRifle</li>
+						<li>Skellin</li>
+					</weaponTags>
+				</PawnKindDef>
+				
+			</value>
+			
+		</match>
+	</Operation>
+	
+</Patch>
