@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThoughtDef>
+		<defName>ToxicHangoverThought</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>ToxicHangover</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+		<li>
+			<label>sluggish</label>
+			<description>My body is all stiff and my vision is starting to blur.</description>
+			<baseMoodEffect>-1</baseMoodEffect>
+		</li>
+		<li>
+			<label>sluggish</label>
+			<description>My body is all stiff and my vision is starting to blur.</description>
+			<baseMoodEffect>-5</baseMoodEffect>
+		</li>
+		<!--
+		<li>
+			<label>foggy mind</label>
+			<description>Every motion takes so much effort, and I can't see very well. My mind feels foggy.</description>
+			<baseMoodEffect>-7</baseMoodEffect>
+		</li>
+		-->
+		<li>
+			<label>foggy mind</label>
+			<description>Every motion takes so much effort, and I can't see very well. My mind feels foggy.</description>
+			<baseMoodEffect>-10</baseMoodEffect>
+		</li>  
+		<li>
+			<label>can't think</label>
+			<description>Ugh... Can't think... Feeling slow... Urgh...</description>
+			<baseMoodEffect>-15</baseMoodEffect>
+		</li>
+		<li>
+			<label>urgh...</label>
+			<description>Urgh... Ugh... Grrr...</description>
+			<baseMoodEffect>-25</baseMoodEffect>
+		</li>
+		<li>
+			<label>urgh...</label>
+			<description>Urgh... Ugh... Grrr...</description>
+			<baseMoodEffect>-35</baseMoodEffect>
+		</li>  
+	</stages>
+  </ThoughtDef>
+
+  </Defs>
