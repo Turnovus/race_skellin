@@ -28,6 +28,7 @@
 		
 		<weaponTags>
 			<li>Gun</li>
+			<li>Skellin</li>
 		</weaponTags>
 		
 		<weaponMoney>
@@ -54,14 +55,16 @@
 		
 		<combatPower>35</combatPower>
 		
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		
 	</PawnKindDef>
 	
-	<PawnKindDef ParentName="MercenaryBase">
-		<defName>SkellinMerc</defName>
-		<label>Skellin Mercanary</label>
-		<race>SkellinRace</race>
+	<PawnKindDef ParentName="MercenaryBase" Name="SkellinFighterBase" Abstract="True">
+		<label>Skellin Mercenary</label>
 		
-		<defaultFactionType>OutlanderCivil</defaultFactionType>
+		<race>SkellinRace</race>
 		
 		<invNutrition>2.55</invNutrition>
 		<itemQuality>Normal</itemQuality>
@@ -80,6 +83,7 @@
 		
 		<weaponTags>
 			<li>Gun</li>
+			<li>Skellin</li>
 		</weaponTags>
 		
 		<weaponMoney>250~500</weaponMoney>
@@ -109,6 +113,33 @@
 		<combatPower>70</combatPower>
 		
 		<biocodeWeaponChance>0.1</biocodeWeaponChance>
+		
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		
 	</PawnKindDef>
+	
+	<PawnKindDef ParentName="SkellinFighterBase">
+		<defName>SkellinMerc</defName>
+		<defaultFactionType>OutlanderCivil</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="SkellinFighterBase">
+		<defName>SkellinPirate</defName>
+		<defaultFactionType>Pirate</defaultFactionType>
+	</PawnKindDef>
+	<!--
+	<PawnKindDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="JanissaryBase">
+		<defName>SkellinScout</defName>
+		<race>SkellinRace</race>
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>SpacerGun</li>
+			<li>SniperRifle</li>
+			<li>Skellin</li>
+		</weaponTags>
+	</PawnKindDef>
+	-->
 	
 </Defs>
