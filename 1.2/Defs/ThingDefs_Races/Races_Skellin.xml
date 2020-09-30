@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs>
 
+<Defs>
 	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
 		<defName>SkellinRace</defName>
 		<label>Skellin</label>
@@ -10,8 +10,10 @@
 				<li>
 					<body>Skellin/Body/</body>
 					<head>Skellin/Head/</head>
+					<!--
 					<skeleton>TestPawn/Dessicated/</skeleton>
 					<skull>TestPawn/Skull/</skull>
+					-->
 				</li>
 			</graphicPaths>
 
@@ -63,8 +65,10 @@
 						<!-- Allowed crown types -->
 						<li>Average_Normal</li>
 					</aliencrowntypes>
+					
 					<alienbodytypes>
 						<li>Male</li>
+						<li>Female</li>
 					</alienbodytypes>
 					
 					<useGenderedHeads>true</useGenderedHeads>
