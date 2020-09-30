@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	
+	<AlienRace.BackstoryDef Abstract="True" Name="SkellinStoryBase">
+		<spawnCategories>
+			<li>SkellinBackstory</li>
+		</spawnCategories>
+		
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</AlienRace.BackstoryDef>
+	
+	<!--Childhood-->
+	
+	<AlienRace.BackstoryDef ParentName="SkellinStoryBase">
+		<defName>SkellinChild001</defName>
+		<title>debug kid</title>
+		<titleShort>debug</titleShort>
+		<description>[PAWN_nameDef] was used to test out a mod.</description>
+		<slot>Childhood</slot>
+	</AlienRace.BackstoryDef>
+	
+	<!--Adulthood-->
+	
+	<AlienRace.BackstoryDef ParentName="SkellinStoryBase">
+		<defName>SkellinAdult001</defName>
+		<title>debug skellin</title>
+		<titleShort>debug</titleShort>
+		<description>[PAWN_nameDef] was used to test out a mod.</description>
+		<slot>Adulthood</slot>
+	</AlienRace.BackstoryDef>
+	
+</Defs>
