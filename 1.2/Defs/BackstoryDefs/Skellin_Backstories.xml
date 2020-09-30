@@ -17,7 +17,7 @@
 		<defName>SkellinChild001</defName>
 		<title>debug kid</title>
 		<titleShort>debug</titleShort>
-		<description>[PAWN_nameDef] was used to test out a mod.</description>
+		<baseDescription>[PAWN_nameDef] was used to test out a mod.</baseDescription>
 		<slot>Childhood</slot>
 	</AlienRace.BackstoryDef>
 	
@@ -27,7 +27,7 @@
 		<defName>SkellinAdult001</defName>
 		<title>debug skellin</title>
 		<titleShort>debug</titleShort>
-		<description>[PAWN_nameDef] was used to test out a mod.</description>
+		<baseDescription>[PAWN_nameDef] was used to test out a mod.</baseDescription>
 		<slot>Adulthood</slot>
 	</AlienRace.BackstoryDef>
 	
