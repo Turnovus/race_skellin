@@ -79,9 +79,7 @@
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
-					<li>SlugBackstory</li>
-					<li>Outlander</li>
-					<li>Outsider</li>
+					<li>SkellinBackstory</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
