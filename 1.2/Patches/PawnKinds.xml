@@ -16,7 +16,17 @@
 				
 				<PawnKindDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="JanissaryBase">
 					<defName>SkellinScout</defName>
+					<label>skellin scout</label>
 					<race>SkellinRace</race>
+					
+					<backstoryFiltersOverride>
+						<li>
+							<categories>
+								<li>SkellinBackstory</li>
+							</categories>
+						</li>
+					</backstoryFiltersOverride>
+					
 					<weaponTags>
 						<li>IndustrialGunAdvanced</li>
 						<li>SpacerGun</li>
