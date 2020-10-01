@@ -2,6 +2,9 @@
 
 <Patch>
 	
+	<!--Support for other mods-->
+	
+	<!--Royalty DLC-->
 	<Operation Class="PatchOperationFindMod">
 		
 		<mods>
@@ -14,7 +17,7 @@
 			
 			<value>
 				
-				<PawnKindDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="JanissaryBase">
+				<PawnKindDef ParentName="JanissaryBase">
 					<defName>SkellinScout</defName>
 					<label>skellin scout</label>
 					<race>SkellinRace</race>
@@ -38,6 +41,106 @@
 			</value>
 			
 		</match>
+	</Operation>
+	
+	<!--VFE - Settlers-->
+	<Operation Class="PatchOperationFindMod">
+		
+		<mods>
+			<li>Vanilla Factions Expanded - Settlers</li>
+		</mods>
+		
+		<match Class="PatchOperationAdd">
+			
+			<xpath>/Defs</xpath>
+			
+			<value>
+				
+				<PawnKindDef ParentName="OutlanderBase">
+					<race>SkellinRace</race>
+					<defName>SkellinBandit</defName>
+					<label>skellin outlaw</label>
+					<combatPower>45</combatPower>
+					<itemQuality>Poor</itemQuality>
+					<isFighter>true</isFighter>
+					
+					<backstoryFiltersOverride>
+						<li>
+							<categories>
+								<li>SkellinBackstory</li>
+								<li>SkellinCowboyBackstory</li>
+							</categories>
+						</li>
+					</backstoryFiltersOverride>
+					
+					<gearHealthRange>
+						<min>0.3</min>
+						<max>2.0</max>
+					</gearHealthRange>
+					<weaponTags>
+						<li>SimpleGun</li>
+						<li>Skellin</li>
+					</weaponTags>
+					<apparelTags>
+						<li>Outlander</li>
+						<li>IndustrialMilitaryBasic</li>
+					</apparelTags>
+					<weaponMoney>
+						<min>150</min>
+						<max>450</max>
+					</weaponMoney>
+					<apparelMoney>
+						<min>200</min>
+						<max>400</max>
+					</apparelMoney>
+					<apparelRequired>
+						<li>VFES_Headgear_Bandana</li>
+					</apparelRequired>
+				</PawnKindDef>
+				
+				<PawnKindDef ParentName="OutlanderBase">
+					<race>SkellinRace</race>
+					<defName>SkellinSettler</defName>
+					<label>sharpshooter</label>
+					<combatPower>50</combatPower>
+					<isFighter>true</isFighter>
+					
+					<backstoryFiltersOverride>
+						<li>
+							<categories>
+								<li>SkellinBackstory</li>
+								<li>SkellinCowboyBackstory</li>
+							</categories>
+						</li>
+					</backstoryFiltersOverride>
+					
+					<gearHealthRange>
+						<min>0.6</min>
+						<max>2</max>
+					</gearHealthRange>
+					<apparelTags>
+						<li>IndustrialMilitaryBasic</li>
+						<li>Outlander</li>
+					</apparelTags>
+					<apparelMoney>
+						<min>400</min>
+						<max>600</max>
+					</apparelMoney>
+					<weaponTags>
+						<li>SimpleGun</li>
+						<li>Skellin</li>
+					</weaponTags>
+					<weaponMoney>
+						<min>200</min>
+						<max>500</max>
+					</weaponMoney>
+					<apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+				</PawnKindDef>
+				
+			</value>
+			
+		</match>
+		
 	</Operation>
 	
 </Patch>
