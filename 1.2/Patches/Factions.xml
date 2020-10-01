@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	
+	<!--outlanders-->
+	<!--raid-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Combat"]/options</xpath>
+		<value>
+			<SkellinMerc>1</SkellinMerc>
+		</value>
+	</Operation>
+	
+	<!--peaceful-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Peaceful"]/options</xpath>
+		<value>
+			<SkellinCivvie>1</SkellinCivvie>
+		</value>
+	</Operation>
+	
+	<!--trader-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Trader"]/guards</xpath>
+		<value>
+			<SkellinMerc>1</SkellinMerc>
+			<SkellinCivvie>0.5</SkellinCivvie>
+		</value>
+	</Operation>
+	
+	<!--settlement-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Combat"]/options</xpath>
+		<value>
+			<SkellinMerc>0.5</SkellinMerc>
+		</value>
+	</Operation>
+	
+</Patch>
