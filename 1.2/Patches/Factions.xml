@@ -30,10 +30,174 @@
 	
 	<!--settlement-->
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Combat"]/options</xpath>
+		<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Settlement"]/options</xpath>
 		<value>
 			<SkellinMerc>0.5</SkellinMerc>
 		</value>
 	</Operation>
 	
+	<!--pirates-->
+	<!--raid-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[kindDef="Combat"]/options</xpath>
+		<value>
+			<SkellinPirate>1.5</SkellinPirate>
+		</value>
+	</Operation>
+	
+	<!--settlement-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[kindDef="Settlement"]/options</xpath>
+		<value>
+			<SkellinPirate>2</SkellinPirate>
+		</value>
+	</Operation>
+	
+	<!--[dlc] empire-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<!--trader-->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/FactionDef[defName="Empire"]/pawnGroupMakers/li[kindDef="Trader"]/guards</xpath>
+					<value>
+					<SkellinScout>1</SkellinScout>
+					</value>
+				</li>
+	
+				<!--raids-->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/FactionDef[defName="Empire"]/pawnGroupMakers/li[kindDef="Combat"]/options</xpath>
+					<value>
+						<SkellinScout>1</SkellinScout>
+					</value>
+				</li>
+				
+				<!--settlement-->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/FactionDef[defName="Empire"]/pawnGroupMakers/li[kindDef="Settlement"]/options</xpath>
+					<value>
+						<SkellinScout>1</SkellinScout>
+					</value>
+				</li>
+			
+			</operations>
+		</match>
+	</Operation>
+	
+	<!--[mod] vfe settlers-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Settlers</li>
+		</mods>
+		
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!--civil settlers-->
+				<!--raid-->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/FactionDef[defName="SettlerCivil"]/pawnGroupMakers/li[kindDef="Combat"]/options</xpath>
+					<value>
+						<SkellinSettler>2</SkellinSettler>
+					</value>
+				</li>
+				
+				<!--peaceful-->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/FactionDef[defName="SettlerCivil"]/pawnGroupMakers/li[kindDef="Peaceful"]/options</xpath>
+					<value>
+						<SkellinSettler>2</SkellinSettler>
+						<SkellinCivvie>1</SkellinCivvie>
+					</value>
+				</li>
+				
+				<!--trader-->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/FactionDef[defName="SettlerCivil"]/pawnGroupMakers/li[kindDef="Trader"]/guards</xpath>
+					<value>
+						<SkellinSettler>1</SkellinSettler>
+					</value>
+				</li>
+				
+				<!--settlement-->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/FactionDef[defName="SettlerCivil"]/pawnGroupMakers/li[kindDef="Settlement"]/options</xpath>
+					<value>
+						<SkellinSettler>2.5</SkellinSettler>
+					</value>
+				</li>
+				
+				<!--rough settlers-->
+				<!--raid-->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/FactionDef[defName="SettlerRough"]/pawnGroupMakers/li[kindDef="Combat"]/options</xpath>
+					<value>
+						<SkellinBandit>2</SkellinBandit>
+					</value>
+				</li>
+				
+				<!--peaceful-->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/FactionDef[defName="SettlerRough"]/pawnGroupMakers/li[kindDef="Peaceful"]/options</xpath>
+					<value>
+						<SkellinCivvie>1</SkellinCivvie>
+					</value>
+				</li>
+				
+				<!--trader-->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/FactionDef[defName="SettlerRough"]/pawnGroupMakers/li[kindDef="Trader"]/guards</xpath>
+					<value>
+						<SkellinBandit>1</SkellinBandit>
+					</value>
+				</li>
+				
+				<!--settlement-->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/FactionDef[defName="SettlerRough"]/pawnGroupMakers/li[kindDef="Settlement"]/options</xpath>
+					<value>
+						<SkellinBandit>2.5</SkellinBandit>
+					</value>
+				</li>
+				
+				<!--bandits-->
+				<!--raid-->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/FactionDef[defName="SettlerSavage"]/pawnGroupMakers/li[kindDef="Combat"]/options</xpath>
+					<value>
+						<SkellinBandit>2</SkellinBandit>
+					</value>
+				</li>
+				
+				<!--peaceful-->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/FactionDef[defName="SettlerSavage"]/pawnGroupMakers/li[kindDef="Peaceful"]/options</xpath>
+					<value>
+						<SkellinCivvie>1</SkellinCivvie>
+					</value>
+				</li>
+				
+				<!--trader-->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/FactionDef[defName="SettlerSavage"]/pawnGroupMakers/li[kindDef="Trader"]/guards</xpath>
+					<value>
+						<SkellinBandit>1</SkellinBandit>
+					</value>
+				</li>
+				
+				<!--settlement-->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/FactionDef[defName="SettlerSavage"]/pawnGroupMakers/li[kindDef="Settlement"]/options</xpath>
+					<value>
+						<SkellinBandit>2.5</SkellinBandit>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
 </Patch>
