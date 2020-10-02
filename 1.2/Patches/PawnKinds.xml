@@ -25,6 +25,7 @@
 					<backstoryFiltersOverride>
 						<li>
 							<categories>
+								<li>SkellinRoyalBackstory</li>
 								<li>SkellinBackstory</li>
 							</categories>
 						</li>
