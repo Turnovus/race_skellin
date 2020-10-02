@@ -14,11 +14,54 @@
 	<!--Childhood-->
 	
 	<AlienRace.BackstoryDef ParentName="SkellinStoryBase">
-		<defName>SkellinChild001</defName>
-		<title>debug kid</title>
-		<titleShort>debug</titleShort>
-		<baseDescription>[PAWN_nameDef] was used to test out a mod.</baseDescription>
+		<defName>SkellinChild000</defName>
+		<title>hunted child</title>
+		<titleShort>hunted</titleShort>
+		<baseDescription>When [PAWN_nameDef] was a child, [PAWN_possessive] father killed the son of an influential mob boss. [PAWN_nameDef]'s family was murdered by thugs, but [PAWN_pronoun] managed to escape. [PAWN_nameDef] spent [PAWN_possessive] early years running from the mob, before [PAWN_pronoun] could find a way off-world.</baseDescription>
 		<slot>Childhood</slot>
+		
+		<skillGains>
+			<li><defName>Shooting</defName><amount>2</amount></li>
+			<li><defName>Melee</defName><amount>4</amount></li>
+		</skillGains>
+		<workDisables>
+			<li>Social</li>
+		</workDisables>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef ParentName="SkellinStoryBase">
+		<defName>SkellinChild001</defName>
+		<title>brittle-bones</title>
+		<titleShort>brittle</titleShort>
+		<baseDescription>[PAWN_nameDef] is very prone to injury, especially for a skellin. Many of [PAWN_possessive] early days were spent in a cast.</baseDescription>
+		<slot>Childhood</slot>
+		
+		<skillGains>
+			<li><defName>Medicine</defName><amount>4</amount></li>
+			<li><defName>Intellectual</defName><amount>2</amount></li>
+		</skillGains>
+		<forcedTraits>
+			<li><defName>Wimp</defName><chance>70</chance></li>
+		</forcedTraits>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef ParentName="SkellinStoryBase">
+		<defName>SkellinChild002</defName>
+		<title>child gunsmith</title>
+		<titleShort>smith</titleShort>
+		<baseDescription>[PAWN_nameDef] was born and raised on a rimworld. The only thing [PAWN_possessive] enjoyed more than firing guns was assembling guns. While [PAWN_pronoun] had no problem firing a gun, [PAWN_defName] couldn't bare visiting the colony's triage, knowing that [PAWN_pronoun] specialized in making devices to inflict suffering.</baseDescription>
+		<slot>Childhood</slot>
+		
+		<skillGains>
+			<li><defName>Crafting</defName><amount>6</amount></li>
+			<li><defName>Shooting</defName><amount>2</amount></li>
+		</skillGains>
+		<forcedTraits>
+			<li><defName>Industriousness</defName><degree>1</degree><chance>90</chance></li>
+		</forcedTraits>
+		<workDisables>
+			<li>Caring</li>
+		</workDisables>
 	</AlienRace.BackstoryDef>
 	
 	<!--Adulthood-->
