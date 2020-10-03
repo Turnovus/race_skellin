@@ -41,7 +41,7 @@
 			<li><defName>Intellectual</defName><amount>2</amount></li>
 		</skillGains>
 		<forcedTraits>
-			<li><defName>Wimp</defName><chance>70</chance></li>
+			<li><defName>Wimp</defName></li>
 		</forcedTraits>
 	</AlienRace.BackstoryDef>
 	
@@ -49,7 +49,7 @@
 		<defName>SkellinChild002</defName>
 		<title>child gunsmith</title>
 		<titleShort>smith</titleShort>
-		<baseDescription>[PAWN_nameDef] was born and raised on a rimworld. The only thing [PAWN_possessive] enjoyed more than firing guns was assembling guns. While [PAWN_pronoun] had no problem firing a gun, [PAWN_defName] couldn't bare visiting the colony's triage, knowing that [PAWN_pronoun] specialized in making devices to inflict suffering.</baseDescription>
+		<baseDescription>[PAWN_nameDef] was born and raised on a rimworld. The only thing [PAWN_pronoun] enjoyed more than firing guns was assembling guns. While [PAWN_pronoun] had no problem firing a gun, [PAWN_nameDef] couldn't bare visiting the colony's triage, knowing that [PAWN_pronoun] specialized in making devices to inflict suffering.</baseDescription>
 		<slot>Childhood</slot>
 		
 		<skillGains>
@@ -67,11 +67,47 @@
 	<!--Adulthood-->
 	
 	<AlienRace.BackstoryDef ParentName="SkellinStoryBase">
-		<defName>SkellinAdult001</defName>
-		<title>debug skellin</title>
-		<titleShort>debug</titleShort>
-		<baseDescription>[PAWN_nameDef] was used to test out a mod.</baseDescription>
+		<defName>skellinAdult000</defName>
+		<title>abandoned merc</title>
+		<titleShort>abandoned</titleShort>
+		<baseDescription>[PAWN_nameDef] was hired to kill a target. [PAWN_pronoun] was shuttled to a remote cabin, but soon realized that nobody was inside. [PAWN_pronoun] then realized that [PAWN_pronoun] had been double-crossed, as the shuttle took off without [PAWN_objective].</baseDescription>
 		<slot>Adulthood</slot>
+		
+		<skillGains>
+			<li><defName>Shooting</defName><amount>2</amount></li>
+			<li><defName>Melee</defName><amount>2</amount></li>
+			<li><defName>Social</defName><amount>-3</amount></li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef ParentName="SkellinStoryBase">
+		<defName>SkellinAdult001</defName>
+		<title>farmhand</title>
+		<titleShort>farmhand</titleShort>
+		<baseDescription>[PAWN_nameDef] was never really any good with a gun. This landed [PAWN_pronoun] a job as a farmhand. This turned out to be [PAWN_nameDef]'s calling.</baseDescription>
+		<slot>Adulthood</slot>
+		
+		<skillGains>
+			<li><defName>Shooting</defName><amount>-3</amount></li>
+			<li><defName>Plants</defName><amount>4</amount></li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef ParentName="SkellinStoryBase">
+		<defName>SkellinAdult002</defName>
+		<title>melee enthusiast</title>
+		<titleShort>brawler</titleShort>
+		<baseDescription>[PAWN_nameDef] insists on using melee weapons, despite being at a physiological disadvantage.</baseDescription>
+		<slot>Adulthood</slot>
+		
+		<skillGains>
+			<li><defName>Shooting</defName><amount>-4</amount></li>
+			<li><defName>Melee</defName><amount>6</amount></li>
+		</skillGains>
+		<forcedTraits>
+			<li><defName>Brawler</defName><chance>40</chance></li>
+			<li><defName>Tough</defName><chance>10</chance></li>
+		</forcedTraits>
 	</AlienRace.BackstoryDef>
 	
 </Defs>
