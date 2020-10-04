@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TipSetDef[defName="GameplayTips"]/tips</xpath>
+		
+		<value>
+			<li TKey="SkellinStrengthWeakness">Skellins can't take many hits, but their dexterity lets them put out a lot of hits. Ideally, skellins should take out their opponents before they have any time to attack.</li>
+		</value>
+	</Operation>
+</Patch>
