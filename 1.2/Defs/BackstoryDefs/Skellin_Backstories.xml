@@ -64,6 +64,22 @@
 		</workDisables>
 	</AlienRace.BackstoryDef>
 	
+	<AlienRace.BackstoryDef ParentName="SkellinStoryBase">
+		<defName>SkellinChild003</defName>
+		<title>ranch stray</title>
+		<titleShort>rancher</titleShort>
+		<baseDescription>Born and raised on a RimWorld, [PAWN_nameDef] ran from home at a young age, and rode off to a nearby ranch. The ranch boss took a liking to [PAWN_objective], and allowed [PAWN_objective] to stay, as long as [PAWN_pronoun] worked for [PAWN_possessive] keep.</baseDescription>
+		<slot>Childhood</slot>
+		
+		<skillGains>
+			<li><defName>Animals</defName><amount>5</amount></li>
+			<li><defName>Crafting</defName><amount>3</amount></li>
+		</skillGains>
+		<forcedTraits>
+			<li><defName>Tough</defName><chance>65</chance></li>
+		</forcedTraits>
+	</AlienRace.BackstoryDef>
+	
 	<!--Adulthood-->
 	
 	<AlienRace.BackstoryDef ParentName="SkellinStoryBase">
@@ -78,6 +94,9 @@
 			<li><defName>Melee</defName><amount>2</amount></li>
 			<li><defName>Social</defName><amount>-3</amount></li>
 		</skillGains>
+		<forcedTraits>
+			<li><defName>Bloodlust</defName><chance>40</chance></li>
+		</forcedTraits>
 	</AlienRace.BackstoryDef>
 	
 	<AlienRace.BackstoryDef ParentName="SkellinStoryBase">
@@ -107,6 +126,88 @@
 		<forcedTraits>
 			<li><defName>Brawler</defName><chance>40</chance></li>
 			<li><defName>Tough</defName><chance>10</chance></li>
+		</forcedTraits>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef ParentName="SkellinStoryBase">
+		<defName>SkellinAdult003</defName>
+		<title>bedridden colonist</title>
+		<titleShort>spineless</titleShort>
+		<baseDescription>[PAWN_nameDef] lived in a rim colony. One day, an insane colonist went berserk, and shattered [PAWN_possessive] spine with a club. [PAWN_nameDef] spent many days in the hospital, unable to move. [PAWN_pronoun] stayed positive, however, and other colonists enjoyed visiting [PAWN_objective] just to chat. [PAWN_pronoun] eventually received a donor spine, after the same insane colonist tried his luck against the colony's best brawler.</baseDescription>
+		<slot>Adulthood</slot>
+		
+		<skillGains>
+			<li><defName>Melee</defName><amount>-5</amount></li>
+			<li><defName>Medicine</defName><amount>2</amount></li>
+			<li><defName>Social</defName><amount>5</amount></li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef ParentName="SkellinStoryBase">
+		<defName>SkellinAdult004</defName>
+		<title>jealous lover</title>
+		<titleShort>lover</titleShort>
+		<baseDescription>[PAWN_nameDef] used to frequent a bar, where [PAWN_pronoun] entered a relationship with an attractive server. Alas, [PAWN_possessive] lover had a flirting nature, and [PAWN_nameDef] was jealous of looks from other patrons. One day, [PAWN_nameDef] became so angry, [PAWN_pronoun] challenged a stranger to a duel. [PAWN_possessive] lover was killed in the crossfire, and [PAWN_nameDef] fled, swearing never to love again.</baseDescription>
+		<slot>Adulthood</slot>
+		
+		<skillGains>
+			<li><defName>Shooting</defName><amount>2</amount></li>
+		</skillGains>
+		<forcedTraits>
+			<li><defName>Jealous</defName><chance>20</chance></li>
+		</forcedTraits>
+		<workDisables>
+			<li>Social</li>
+		</workDisables>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef ParentName="SkellinStoryBase">
+		<defName>SkellinAdult005</defName>
+		<title>sundown shooter</title>
+		<titleShort>coward</titleShort>
+		<baseDescription>[PAWN_nameDef] travelled between settlements, challenging popular figures to shootouts. Obviously, [PAWN_pronoun] always won. The reason: [PAWN_nameDef] only fought with [PAWN_possessive] back to the sunset.</baseDescription>
+		<slot>Adulthood</slot>
+		
+		<skillGains>
+			<li><defName>Shooting</defName><amount>-3</amount></li>
+			<li><defName>Social</defName><amount>4</amount></li>
+		</skillGains>
+		<workDisables>
+			<li>ManualDumb</li>
+		</workDisables>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef ParentName="SkellinStoryBase">
+		<defName>SkellinAdult006</defName>
+		<title>paste innovator</title>
+		<titleShort>innovator</titleShort>
+		<baseDescription>As a young adult, [PAWN_nameDef] got [PAWN_possessive] first taste of nutrient paste. [PAWN_pronoun] hated it. However, [PAWN_pronoun] saw the potential, considering the fact that [PAWN_pronoun] nearly starved before the base's paste dispenser was introduced. [PAWN_pronoun] set out to create a better paste dispenser, and soon became a social outcast because of all the terrible glop [PAWN_pronoun] tested on [PAWN_possessive] fellow townsfolk.</baseDescription>
+		<slot>Adulthood</slot>
+		
+		<skillGains>
+			<li><defName>Construction</defName><amount>4</amount></li>
+			<li><defName>Crafting</defName><amount>4</amount></li>
+			<li><defName>Intellectual</defName><amount>2</amount></li>
+			<li><defName>Cooking</defName><amount>2</amount></li>
+		</skillGains>
+		<workDisables>
+			<li>ManualDumb</li>
+			<li>Social</li>
+		</workDisables>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef ParentName="SkellinStoryBase">
+		<defName>SkellinAdult007</defName>
+		<title>retired merc</title>
+		<titleShort>retired</titleShort>
+		<baseDescription>[PAWN_nameDef] was in a gang of contract mercenaries. [PAWN_possessive] crew was tasked with taking out a small settlement. As they approached, [PAWN_pronoun] was feeling confident about the job, before a manic spray from a minigun dropped all of [PAWN_possessive] colleagues at once, prompting [PAWN_pronoun] to run. It was at this moment that [PAWN_nameDef] decided to take a break from [PAWN_possessive] contract-killing gig.</baseDescription>
+		<slot>Adulthood</slot>
+		
+		<skillGains>
+			<li><defName>Shooting</defName><amount>6</amount></li>
+		</skillGains>
+		<forcedTraits>
+			<li><defName>Bloodlust</defName><chance>40</chance></li>
 		</forcedTraits>
 	</AlienRace.BackstoryDef>
 	
