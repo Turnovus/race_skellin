@@ -9,7 +9,7 @@ namespace Skellin
     {
       if (hediff.def != HediffDefOf.ToxicBuildup)
         return false;
-      HealthUtility.AdjustSeverity(pawn, Skellin_HediffDefOf.ToxicHangover, hediff.Severity);
+      HealthUtility.AdjustSeverity(pawn, Skellin_HediffDefOf.ToxicFlu, hediff.Severity);
       pawn.health.RemoveHediff(hediff);
       return true;
     }
