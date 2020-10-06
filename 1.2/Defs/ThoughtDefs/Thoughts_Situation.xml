@@ -2,9 +2,9 @@
 <Defs>
 
 	<ThoughtDef>
-		<defName>ToxicHangoverThought</defName>
+		<defName>ToxicFluThought</defName>
 		<workerClass>ThoughtWorker_Hediff</workerClass>
-		<hediff>ToxicHangover</hediff>
+		<hediff>ToxicFlu</hediff>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 		<li>
