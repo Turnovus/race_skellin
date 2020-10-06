@@ -6,7 +6,7 @@
 		<hediffGivers>
 			
 			<li Class="Skellin.HediffGiver_SkellinToxic">
-				<hediff>ToxicHangover</hediff>
+				<hediff>ToxicFlu</hediff>
 			</li>
 			
 		</hediffGivers>
