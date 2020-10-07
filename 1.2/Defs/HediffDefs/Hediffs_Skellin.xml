@@ -4,22 +4,21 @@
 	<HediffDef>
 		<defName>ToxicFlu</defName>
 		<label>toxic flu</label>
-		<description>An adverse, but non-lethal reaction to toxic compounds that is exclusive to Skellins. May cause behavioral abnormalities at high severities.</description>
+		<description>An adverse, but non-lethal reaction to toxic compounds that is exclusive to skellins. May cause behavioral abnormalities at high severities.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
-		<!--<lethalSeverity>1</lethalSeverity>-->
+		
 		<makesSickThought>true</makesSickThought>
+		
 		<scenarioCanAdd>true</scenarioCanAdd>
 		<taleOnVisible>ToxicityRevealed</taleOnVisible>
-		<!--
-		<maxSeverity>1</maxSeverity>
-		<lethalSeverity>1.1</lethalSeverity>
-		-->
+		
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-0.08</severityPerDay>
 			</li>
 		</comps>
+		
 		<stages>
 			<li>
 				<label>initial</label>
@@ -29,6 +28,7 @@
 				<vomitMtbDays>3</vomitMtbDays>
 				<label>initial</label>
 				<minSeverity>0.04</minSeverity>
+				<painFactor>0.99</painFactor>
 				<capMods>
 					<li>
 						<capacity>Sight</capacity>
@@ -48,7 +48,12 @@
 				<vomitMtbDays>2.5</vomitMtbDays>
 				<label>minor</label>
 				<minSeverity>0.2</minSeverity>
+				<painFactor>0.95</painFactor>
 				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.02</offset>
+					</li>
 					<li>
 						<capacity>Sight</capacity>
 						<offset>-0.05</offset>
@@ -67,7 +72,12 @@
 				<vomitMtbDays>2</vomitMtbDays>
 				<label>moderate</label>
 				<minSeverity>0.4</minSeverity>
+				<painFactor>0.9</painFactor>
 				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.05</offset>
+					</li>
 					<li>
 						<capacity>Sight</capacity>
 						<offset>-0.1</offset>
@@ -92,7 +102,12 @@
 				<vomitMtbDays>1.5</vomitMtbDays>
 				<label>serious</label>
 				<minSeverity>0.6</minSeverity>
+				<painFactor>0.8</painFactor>
 				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.07</offset>
+					</li>
 					<li>
 						<capacity>Sight</capacity>
 						<offset>-0.15</offset>
@@ -125,7 +140,12 @@
 				<vomitMtbDays>1</vomitMtbDays>
 				<label>extreme</label>
 				<minSeverity>0.80</minSeverity>
+				<painFactor>0.65</painFactor>
 				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.10</offset>
+					</li>
 					<li>
 						<capacity>Sight</capacity>
 						<offset>-0.25</offset>
@@ -156,5 +176,166 @@
 			</li>
 		</stages>
 	</HediffDef>
-
+	
+	<HediffDef>
+		<defName>ToxicFever</defName>
+		<label>toxic fever</label>
+		<description>A response to specific chemical compunds, exclusive to skellins. Produces a drug-like effect, without the adverse reactions. It may still cause behavioral effects, however.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<taleOnVisible>ToxicityRevealed</taleOnVisible>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.08</severityPerDay>
+			</li>
+		</comps>
+		
+		<stages>
+			<li>
+				<label>initial</label>
+				<becomeVisible>false</becomeVisible>
+			</li>
+			<li>
+				<label>initial</label>
+				<minSeverity>0.04</minSeverity>
+				<painFactor>0.95</painFactor>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.02</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.01</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.05</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.05</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>minor</label>
+				<minSeverity>0.2</minSeverity>
+				<painFactor>0.9</painFactor>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.05</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.05</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.10</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.10</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<vomitMtbDays>3.5</vomitMtbDays>
+				<label>moderate</label>
+				<minSeverity>0.4</minSeverity>
+				<painFactor>0.8</painFactor>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.07</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.10</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.15</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.15</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<vomitMtbDays>3.5</vomitMtbDays>
+				<label>serious</label>
+				<minSeverity>0.6</minSeverity>
+				<painFactor>0.8</painFactor>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.10</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.15</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.17</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.20</offset>
+					</li>
+				</capMods>
+				<mentalStateGivers>
+					<li>
+						<mentalState>WanderConfused</mentalState>
+						<mtbDays>6</mtbDays>
+					</li>
+					<li>
+						<mentalState>Berserk</mentalState>
+						<mtbDays>8</mtbDays>
+					</li>
+				</mentalStateGivers>
+			</li>
+			<li>
+				<vomitMtbDays>3</vomitMtbDays>
+				<label>extreme</label>
+				<minSeverity>0.80</minSeverity>
+				<painFactor>0.65</painFactor>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.15</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.20</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.20</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.25</offset>
+					</li>
+				</capMods>
+				<mentalStateGivers>
+					<li>
+						<mentalState>WanderConfused</mentalState>
+						<mtbDays>5</mtbDays>
+					</li>
+					<li>
+						<mentalState>Berserk</mentalState>
+						<mtbDays>7</mtbDays>
+					</li>
+				</mentalStateGivers>
+			</li>
+		</stages>
+	</HediffDef>
+	
 </Defs>
