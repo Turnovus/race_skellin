@@ -1,0 +1,22 @@
+<Defs>
+
+	<IncidentDef>
+		<defName>SkellinShamblerPack</defName>
+		<label>shambler pack</label>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>Skellin.IncidentWorker_SkellinShambler</workerClass>
+		<baseChance>0.7</baseChance>
+		<category>ThreatBig</category>
+		<letterLabel>Shamblers</letterLabel>
+		<letterText>Tales tell of wandering groups of skellins who stumble upon caches of chemicals, and are driven mad by the toxins. These skellins are known as shamblers.\n\nA group of shamblers has entered the area. They will attack anything that moves and raze your colony to the ground. The only way to stop them is by incapacitating them.\n\nThe skellins are not affiliated with any faction. Once they've been downed, you can nurse them back to health, or capture them.</letterText>
+		<letterDef>ThreatBig</letterDef>
+		<pointsScaleable>true</pointsScaleable>
+		<tale>ManhunterPack</tale>
+		<letterHyperlinkHediffDefs>
+			<li>ToxicFever</li>
+		</letterHyperlinkHediffDefs>
+	</IncidentDef>
+
+</Defs>
