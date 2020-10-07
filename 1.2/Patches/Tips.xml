@@ -5,6 +5,7 @@
 		
 		<value>
 			<li TKey="SkellinStrengthWeakness">Skellins can't take many hits, but their dexterity lets them put out a lot of hits. Ideally, skellins should take out their opponents before they have any time to attack.</li>
+			<li TKey="SkellinLoreShamblers">Tales tell of wandering groups of skellins who stumble upon caches of chemicals, and are driven mad by the toxins. These skellins are known as shamblers.</li>
 		</value>
 	</Operation>
 </Patch>
