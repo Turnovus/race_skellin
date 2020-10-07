@@ -147,17 +147,39 @@
 		<defName>SkellinPirate</defName>
 		<defaultFactionType>Pirate</defaultFactionType>
 	</PawnKindDef>
-	<!--
-	<PawnKindDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="JanissaryBase">
-		<defName>SkellinScout</defName>
-		<race>SkellinRace</race>
-		<weaponTags>
-			<li>IndustrialGunAdvanced</li>
-			<li>SpacerGun</li>
-			<li>SniperRifle</li>
-			<li>Skellin</li>
-		</weaponTags>
-	</PawnKindDef>
-	-->
 	
+	<!--event pawnkind-->
+	<PawnKindDef ParentName="SkellinKindBase">
+		<defName>SkellinShambler</defName>
+		<defaultFactionType>Ancients</defaultFactionType>
+		<label>shambler</label>
+		<race>SkellinRace</race>
+		<combatPower>95</combatPower>
+		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+		<itemQuality>Poor</itemQuality>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+		</apparelTags>
+		
+		<gearHealthRange>0.4~1.1</gearHealthRange>
+		<apparelAllowHeadgearChance>0.1</apparelAllowHeadgearChance>
+		
+		<chemicalAddictionChance>0.03</chemicalAddictionChance>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<techHediffsChance>0.03</techHediffsChance>
+		<techHediffsMoney>50~50</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		
+		<weaponTags>
+			<li>Revolver</li>
+			<li>NeolithicMeleeBasic</li>
+			<li>MedievalMeleeBasic</li>
+		</weaponTags>
+		
+		<weaponMoney>60~200</weaponMoney>
+		<apparelMoney>300~500</apparelMoney>
+	</PawnKindDef>
 </Defs>
