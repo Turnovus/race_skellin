@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TaleDef>
+		<defName>SkellinShamblerTale</defName>
+		<label>shambler invasion</label>
+		<taleClass>Tale_SinglePawn</taleClass>
+		<type>Volatile</type>
+		<baseInterest>15</baseInterest>
+		<rulePack>
+			<rulesStrings>
+				<li>tale_noun->delerious [Skellin]s menacing [PAWN_nameDef]'s [Community]</li>
+				<li>tale_noun->[PAWN_nameDef]'s [Community] being razed by toxic creatures</li>
+				<li>tale_noun->[PAWN_nameDef]'s [Community] being visited by shamblers.</li>
+				<li>image->[Quantity_adjphrase] [Skellin]s approaching slowly</li>
+				<li>image->a terrible [Skellin] approaching, eyes glowing [Color]</li>
+				<li>image->[Quantity_adjphrase] [AdjectiveAngsty] [Skellin]s shambling around</li>
+				<li>image->a [AdjectiveAngsty] group threatening local fauna while [circumstance_phrase]</li>
+				<li>image->[Quantity_adjphrase] [Enemy]s wrestling a [Animal]</li>
+				<li>image->[Quantity_adjphrase] [Skellin]s entering the area, [circumstance_phrase]</li>
+				<li>image->[Quantity_adjphrase] [Enemy]s made of [Gore] [circumstance_phrase]</li>
+				<li>circumstance_phrase->groaning</li>
+				<li>circumstance_phrase->vomiting</li>
+				<li>circumstance_phrase->vomiting up [Gore]</li>
+				<li>circumstance_phrase->caughing up [Gore]</li>
+				<li>circumstance_phrase->speaking gibberish</li>
+				<li>circumstance_phrase->advancing over a [TerrainFeature]</li>
+				<li>circumstance_phrase->completely encircling a [Community]</li>
+				<li>circumstance_phrase->attacking [Quantity_adjphrase] [PersonJob]s</li>
+				<li>circumstance_phrase->covered in [Gore]</li>
+				<li>circumstance_phrase->reaching out towards [PAWN_nameDef]</li>
+				<li>desc_sentence->[PAWN_nameDef] looks on in shock.</li>
+				<li>desc_sentence->There is [Gore] everywhere.</li>
+				<li>desc_sentence->A [Color] [Gas] surrounds [PAWN_nameDef].</li>
+				<li>desc_sentence->A [Color] [Gas] blankets [PAWN_nameDef]'s [Community].</li>
+				<li>Gas->gas</li>
+				<li>Gas->cloud</li>
+				<li>Gas->mist</li>
+				<li>Gas->fog</li>
+				<li>Gas->miasma</li>
+				<li>Skellin->skellin</li>
+				<li>Skellin->shambler</li>
+				<li>skellin->skeleton</li>
+				<li>Skellin->freak</li>
+				<li>Skellin->ghoul</li>
+				<li>Skellin->zombie</li>
+			</rulesStrings>
+		</rulePack>
+	</TaleDef>
+</Defs>
