@@ -19,7 +19,7 @@ namespace Skellin
             if (this.def.pawnFixedGender != Gender.None)
                 fixedGender = new Gender?(this.def.pawnFixedGender);
             this.def.pawnKind = Skellin_PawnKindDefOf.SkellinShambler; //Use SkellinShambler PawnKind
-            return PawnGenerator.GeneratePawn(new PawnGenerationRequest(this.def.pawnKind, Faction.OfAncients, forceGenerateNewPawn: true, mustBeCapableOfViolence: this.def.pawnMustBeCapableOfViolence, colonistRelationChanceFactor: 20f, fixedGender: fixedGender));
+            return PawnGenerator.GeneratePawn(new PawnGenerationRequest(this.def.pawnKind, null, forceGenerateNewPawn: true, mustBeCapableOfViolence: this.def.pawnMustBeCapableOfViolence, colonistRelationChanceFactor: 20f, fixedGender: fixedGender));
         }
 
         protected override bool CanFireNowSub(IncidentParms parms)
