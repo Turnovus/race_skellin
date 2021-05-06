@@ -7,7 +7,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Combat"]/options</xpath>
 		<value>
-			<SkellinMerc>1</SkellinMerc>
+			<SkellinMerc>3.5</SkellinMerc>
 		</value>
 	</Operation>
 	
@@ -15,7 +15,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Peaceful"]/options</xpath>
 		<value>
-			<SkellinCivvie>1</SkellinCivvie>
+			<SkellinCivvie>2.5</SkellinCivvie>
 		</value>
 	</Operation>
 	
@@ -23,8 +23,8 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Trader"]/guards</xpath>
 		<value>
-			<SkellinMerc>1</SkellinMerc>
-			<SkellinCivvie>0.5</SkellinCivvie>
+			<SkellinMerc>3.5</SkellinMerc>
+			<SkellinCivvie>1.5</SkellinCivvie>
 		</value>
 	</Operation>
 	
@@ -32,7 +32,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Settlement"]/options</xpath>
 		<value>
-			<SkellinMerc>0.5</SkellinMerc>
+			<SkellinMerc>2.5</SkellinMerc>
 		</value>
 	</Operation>
 	
@@ -41,7 +41,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[kindDef="Combat"]/options</xpath>
 		<value>
-			<SkellinPirate>1.5</SkellinPirate>
+			<SkellinPirate>3.5</SkellinPirate>
 		</value>
 	</Operation>
 	
@@ -49,7 +49,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[kindDef="Settlement"]/options</xpath>
 		<value>
-			<SkellinPirate>2</SkellinPirate>
+			<SkellinPirate>3</SkellinPirate>
 		</value>
 	</Operation>
 	
@@ -66,7 +66,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/FactionDef[defName="Empire"]/pawnGroupMakers/li[kindDef="Trader"]/guards</xpath>
 					<value>
-					<SkellinScout>1</SkellinScout>
+					<SkellinScout>2.5</SkellinScout>
 					</value>
 				</li>
 	
@@ -74,7 +74,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/FactionDef[defName="Empire"]/pawnGroupMakers/li[kindDef="Combat"]/options</xpath>
 					<value>
-						<SkellinScout>1</SkellinScout>
+						<SkellinScout>2.5</SkellinScout>
 					</value>
 				</li>
 				
@@ -82,7 +82,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/FactionDef[defName="Empire"]/pawnGroupMakers/li[kindDef="Settlement"]/options</xpath>
 					<value>
-						<SkellinScout>1</SkellinScout>
+						<SkellinScout>2.5</SkellinScout>
 					</value>
 				</li>
 			
@@ -103,7 +103,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/FactionDef[defName="SettlerCivil"]/pawnGroupMakers/li[kindDef="Combat"]/options</xpath>
 					<value>
-						<SkellinSettler>2</SkellinSettler>
+						<SkellinSettler>3.5</SkellinSettler>
 					</value>
 				</li>
 				
@@ -111,8 +111,8 @@
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/FactionDef[defName="SettlerCivil"]/pawnGroupMakers/li[kindDef="Peaceful"]/options</xpath>
 					<value>
-						<SkellinSettler>2</SkellinSettler>
-						<SkellinCivvie>1</SkellinCivvie>
+						<SkellinSettler>3.5</SkellinSettler>
+						<SkellinCivvie>1.5</SkellinCivvie>
 					</value>
 				</li>
 				
@@ -120,7 +120,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/FactionDef[defName="SettlerCivil"]/pawnGroupMakers/li[kindDef="Trader"]/guards</xpath>
 					<value>
-						<SkellinSettler>1</SkellinSettler>
+						<SkellinSettler>2.5</SkellinSettler>
 					</value>
 				</li>
 				
@@ -128,7 +128,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/FactionDef[defName="SettlerCivil"]/pawnGroupMakers/li[kindDef="Settlement"]/options</xpath>
 					<value>
-						<SkellinSettler>2.5</SkellinSettler>
+						<SkellinSettler>3.5</SkellinSettler>
 					</value>
 				</li>
 				
@@ -137,7 +137,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/FactionDef[defName="SettlerRough"]/pawnGroupMakers/li[kindDef="Combat"]/options</xpath>
 					<value>
-						<SkellinBandit>2</SkellinBandit>
+						<SkellinBandit>4</SkellinBandit>
 					</value>
 				</li>
 				
@@ -145,7 +145,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/FactionDef[defName="SettlerRough"]/pawnGroupMakers/li[kindDef="Peaceful"]/options</xpath>
 					<value>
-						<SkellinCivvie>1</SkellinCivvie>
+						<SkellinCivvie>3</SkellinCivvie>
 					</value>
 				</li>
 				
@@ -153,7 +153,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/FactionDef[defName="SettlerRough"]/pawnGroupMakers/li[kindDef="Trader"]/guards</xpath>
 					<value>
-						<SkellinBandit>1</SkellinBandit>
+						<SkellinBandit>3</SkellinBandit>
 					</value>
 				</li>
 				
@@ -161,7 +161,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/FactionDef[defName="SettlerRough"]/pawnGroupMakers/li[kindDef="Settlement"]/options</xpath>
 					<value>
-						<SkellinBandit>2.5</SkellinBandit>
+						<SkellinBandit>3.5</SkellinBandit>
 					</value>
 				</li>
 				
@@ -170,7 +170,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/FactionDef[defName="SettlerSavage"]/pawnGroupMakers/li[kindDef="Combat"]/options</xpath>
 					<value>
-						<SkellinBandit>2</SkellinBandit>
+						<SkellinBandit>3</SkellinBandit>
 					</value>
 				</li>
 				
